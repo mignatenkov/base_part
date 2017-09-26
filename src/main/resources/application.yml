@@ -1,0 +1,22 @@
+# Logging settings
+logging:
+  level:
+    ROOT: INFO
+    com.korfax: DEBUG
+    org.hibernate: ERROR
+
+# DB settings
+db:
+  driver: com.mysql.jdbc.Driver
+  url: jdbc:mysql://localhost:3306/base_part_db
+  username: root
+  password: root
+
+# Hibernate settings
+hibernate:
+  dialect: org.hibernate.dialect.MySQLDialect
+  show_sql: true
+#  hbm2ddl.auto: update
+  hbm2ddl.auto: validate
+entitymanager:
+  packagesToScan: com.korfax.base_part.entity
