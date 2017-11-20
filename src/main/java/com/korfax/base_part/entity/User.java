@@ -35,6 +35,11 @@ public class User {
         this.password = password;
     }
 
+    public User(String login, String password) {
+        this.login = login;
+        this.password = password;
+    }
+
     public long getId() {
         return id;
     }
@@ -82,4 +87,5 @@ public class User {
         sb.append('}');
         return sb.toString();
     }
+
 }

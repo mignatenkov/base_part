@@ -19,4 +19,8 @@ public class UserService {
         return retVal;
     }
 
+    public void createNewUser(String login, String password) {
+        userRepository.save(new User(login, password));
+    }
+
 }
